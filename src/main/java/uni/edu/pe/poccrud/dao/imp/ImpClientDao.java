@@ -7,6 +7,10 @@ import org.springframework.stereotype.Repository;
 import uni.edu.pe.poccrud.dao.ClientDao;
 import uni.edu.pe.poccrud.dto.Client;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
 @Repository
 public class ImpClientDao implements ClientDao {
 
