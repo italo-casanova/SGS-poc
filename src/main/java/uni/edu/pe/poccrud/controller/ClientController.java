@@ -13,7 +13,7 @@ public class ClientController {
     ClientService service;
 
     @RequestMapping(
-            value = "/api/v1/clients",
+            value = "/api/v1/clients/create",
             method = RequestMethod.POST
     )
     public Client addClient(
