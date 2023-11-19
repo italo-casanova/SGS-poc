@@ -43,7 +43,12 @@ public class ImpClientDao implements ClientDao {
 
         try{
             getConnection();
-            String sql = "INSERT INTO Cliente VALUES(?, ?, ?, ?, ?, ?, ?);";
+            String sql = """
+                INSERT INTO Cliente (
+                        nombre_representante, apellido_representante,
+                        direccion, dni_representante, correo, ruc
+                ) VALUES(?, ?, ?, ?, ?, ?);
+            """;
             PreparedStatement st = connection.prepareStatement(sql);
             st.setString(1, client.getName());
             st.setString(2, client.getSurname());
@@ -51,7 +56,6 @@ public class ImpClientDao implements ClientDao {
             st.setString(4, client.getDNI());
             st.setString(5, client.getEmail());
             st.setString(6, client.getRUC());
-            st.setString(7, client.getDNI());
             affectedRows = st.executeUpdate();
             st.close();
             closeConnection();
