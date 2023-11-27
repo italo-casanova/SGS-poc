@@ -5,7 +5,7 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-public class ConteinerType {
+public class ContainerType {
     private int conteinertypeId;
     private String conteinertypeCode,conteinertypeName;
 }
