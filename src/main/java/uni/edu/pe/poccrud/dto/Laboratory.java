@@ -6,4 +6,7 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 public class Laboratory {
+
+    private int laboratoryId;
+    private String laboratoryCode, laboratoryName, laboratoryAddress;
 }

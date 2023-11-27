@@ -14,3 +14,5 @@ create table cliente(
 	primary key(cod_cliente)
 );
 ```
+
+

@@ -6,6 +6,7 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 public class Client {
-    private String name, surname, email, RUC, DNI, cellphone, address;
+    private String companyName, company, clientMail, clientRuc, clientDni, clientCellphone, clientAddress,
+            clientPassword ;
 
 }
