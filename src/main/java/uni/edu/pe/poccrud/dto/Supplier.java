@@ -6,7 +6,9 @@ import lombok.Data;
 @AllArgsConstructor
 public class Supplier {
     private int supplierId;
-    private String supplierCode, supplierName, supplierEmail;
+    private String supplierCode;
+    private String supplierName;
+    private String supplierEmail;
     private int supplierPhone;
     private int supplierRuc;
 }
