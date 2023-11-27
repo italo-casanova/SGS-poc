@@ -50,12 +50,13 @@ public class ImpClientDao implements ClientDao {
                 ) VALUES(?, ?, ?, ?, ?, ?);
             """;
             PreparedStatement st = connection.prepareStatement(sql);
-            st.setString(1, client.getName());
+            /*st.setString(1, client.get());
             st.setString(2, client.getSurname());
             st.setString(3, client.getAddress());
             st.setString(4, client.getDNI());
             st.setString(5, client.getEmail());
             st.setString(6, client.getRUC());
+             */
             affectedRows = st.executeUpdate();
             st.close();
             closeConnection();

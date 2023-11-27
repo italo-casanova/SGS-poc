@@ -5,9 +5,7 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-public class Company {
-
-    private int companyRuc, companyId;
-    private String companyName;
-
+public class Tool {
+    private int toolId, toolTypeId;
+    private String toolName, toolCode;
 }
