@@ -1,7 +1,7 @@
 package uni.edu.pe.poccrud.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
+        import lombok.AllArgsConstructor;
+        import lombok.Data;
 
 @Data
 @AllArgsConstructor
