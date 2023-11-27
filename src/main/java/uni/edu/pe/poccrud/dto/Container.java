@@ -6,5 +6,6 @@ package uni.edu.pe.poccrud.dto;
 @Data
 @AllArgsConstructor
 public class Container {
-    private int containerID;
+    private int containerID, disinfectionId, fumigationId, illuminationTypeId, containerTypeId;
+    private String containerCode, destinationHarbour, shipmentHarbour, fillingPlace;
 }
