@@ -18,6 +18,11 @@ public class ImpClientService implements ClientService {
     }
 
     @Override
+    public int addClientInspection(Client client) {
+        return dao.addClientInspection(client);
+    }
+
+    @Override
     public int updateClient(Client client, int id) {
         return 0;
     }
